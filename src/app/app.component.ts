@@ -13,4 +13,13 @@ export class AppComponent {
     name: 'Felipe',
     age: 25,
   };
+
+  public toggleButton() {
+    this.btnDisabled = !this.btnDisabled;
+  }
+
+  public increaseAge() {
+    this.age++;
+  }
+
 }
