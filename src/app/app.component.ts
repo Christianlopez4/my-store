@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  newName: string = '';
   name = 'Christian';
   age = 23;
   btnDisabled = true;
@@ -14,12 +15,23 @@ export class AppComponent {
     age: 25,
   };
 
+  names: string[] = ['juan', 'manuel', 'natalia', 'isabel'];
+
   public toggleButton() {
     this.btnDisabled = !this.btnDisabled;
   }
 
   public increaseAge() {
     this.age++;
+  }
+
+  public addName() {
+    this.names.push(this.newName);
+    this.newName = '';
+  }
+
+  public removeName(index: number) {
+    this.names.splice(index, 1);
   }
 
 }
