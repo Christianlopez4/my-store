@@ -1,3 +1,12 @@
+<h1>*ngSwitch</h1>
+<input type="text" [(ngModel)]="person.name"/>
+<div [ngSwitch]="person.name">
+  <p *ngSwitchCase="'christian'">Hola Christian</p>
+  <p *ngSwitchCase="'felipe'">Hola Felipe</p>
+  <p *ngSwitchCase="'juan'">Hola Juan</p>
+  <p *ngSwitchDefault>No hay match</p>
+</div>
+<hr />
 <h1>*ngFor objects</h1>
 <div>
   <div *ngFor="let product of products">
