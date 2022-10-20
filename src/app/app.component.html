@@ -1,3 +1,7 @@
+<h1>Class & style</h1>
+<input type="text" required #nameinput2="ngModel" [(ngModel)]="person.name"/>
+<p class="message-error" [class.active]="nameinput2.invalid">el campo es requerido</p>
+<p [style.font-style]="nameinput2.value === 'Hola' ? 'italic' : 'normal'">Estilo dinamico activado</p>
 <h1>*ngSwitch</h1>
 <input type="text" [(ngModel)]="person.name"/>
 <div [ngSwitch]="person.name">
@@ -8,7 +12,7 @@
 </div>
 <hr />
 <h1>*ngFor objects</h1>
-<div>
+<div class="products--grid">
   <div *ngFor="let product of products">
     <img width="250" [src]="product.image" alt="image">
     <h2>{{ product.price }}</h2>
