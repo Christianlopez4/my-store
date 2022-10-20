@@ -52,6 +52,12 @@ export class AppComponent {
     }
   ];
 
+  box = {
+    width: 100,
+    height: 100,
+    background: 'red'
+  };
+
   public toggleButton() {
     this.btnDisabled = !this.btnDisabled;
   }

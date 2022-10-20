@@ -9,3 +9,18 @@
   background: red;
   color: white;
 }
+
+.line-error {
+  height: 0;
+  border-bottom: 1px solid;
+}
+.line-error.valid {
+  height: 0;
+  border-bottom: 1px solid;
+  border-color: green;
+}
+.line-error.invalid {
+  height: 0;
+  border-bottom: 1px solid;
+  border-color: red;
+}
