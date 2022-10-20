@@ -58,6 +58,12 @@ export class AppComponent {
     background: 'red'
   };
 
+  register = {
+    name: '',
+    email: '',
+    password: ''
+  };
+
   public toggleButton() {
     this.btnDisabled = !this.btnDisabled;
   }
@@ -73,6 +79,10 @@ export class AppComponent {
 
   public removeName(index: number) {
     this.names.splice(index, 1);
+  }
+
+  public onRegister() {
+    console.log(this.register);
   }
 
 }
